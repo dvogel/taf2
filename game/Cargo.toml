@@ -1,0 +1,17 @@
+[package]
+name = "taf2"
+version = "0.1.0"
+authors = ["Drew P. Vogel <drewpvogel@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+amethyst = "0.15.0"
+log = { version = "0.4.8", features = ["serde"] }
+lazy_static = "1.4.0"
+specs = "0.16.1"
+
+[features]
+default = ["vulkan"]
+empty = ["amethyst/empty"]
+metal = ["amethyst/metal"]
+vulkan = ["amethyst/vulkan"]
