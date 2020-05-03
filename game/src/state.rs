@@ -158,7 +158,7 @@ fn load_player_sprites(world: &mut World) -> Handle<SpriteSheet> {
         let loader = world.read_resource::<Loader>();
         let texture_storage = world.read_resource::<AssetStorage<Texture>>();
         loader.load(
-            "sprites/logo.png",
+            "sprites/GBP.png",
             ImageFormat::default(),
             (),
             &texture_storage,
@@ -171,7 +171,7 @@ fn load_player_sprites(world: &mut World) -> Handle<SpriteSheet> {
         let loader = world.read_resource::<Loader>();
         let sheet_storage = world.read_resource::<AssetStorage<SpriteSheet>>();
         loader.load(
-            "sprites/logo.ron",
+            "sprites/GBP.ron",
             SpriteSheetFormat(texture_handle),
             (),
             &sheet_storage,
